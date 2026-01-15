@@ -1,3 +1,121 @@
-# aplicacioneswebsmr
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar como un Profesional</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-Esta es mi primera web
+<body>
+
+    <!-- ---------------- HEADER ---------------- -->
+    <header>
+        <div class="logo">AdrianCorp</div>
+
+        <nav>
+            <a href="#inicio">Principal</a>
+            <a href="#info">Acerca de</a>
+            <a href="#precios">Precio</a>
+        </nav>
+    </header>
+
+    <!-- ---------------- HERO ---------------- -->
+    <section class="hero" id="inicio">
+        <h1>APRENDE A EDITAR COMO UN PROFESIONAL</h1>
+        <p>y gana dinero con tus habilidades de edición</p>
+        <a href="#" class="btn">Registrarme</a>
+    </section>
+
+    <!-- ---------------- QUIÉNES SOMOS ---------------- -->
+    <section class="info" id="info">
+        <h2>¿Quiénes somos?</h2>
+        <p>
+            Somos un grupo de creadores de contenido especializados en la edición que, 
+            a lo largo de nuestras carreras, decidimos crear un curso profesional para enseñar 
+            a otros cómo editar videos y fotos de manera avanzada.
+        </p>
+        <p>
+            Nuestro objetivo es ayudarte a conseguir trabajo, mejorar tu carrera y convertirte 
+            en un editor profesional.
+        </p>
+    </section>
+
+    <!-- ---------------- SECCIÓN PRECIOS ---------------- -->
+    <section class="precios" id="precios">
+        <h2>Precio</h2>
+
+        <div class="tarjetas">
+
+            <div class="card">
+                <h3>Estándar</h3>
+                <p class="precio">53€</p>
+                <p>
+                    20 lecciones en videollamada<br>
+                    3 meses de acceso<br>
+                    Certificado de curso<br>
+                    Acceso al chat
+                </p>
+                <button>Comprar ahora</button>
+            </div>
+
+            <div class="card">
+                <h3>Avanzado</h3>
+                <p class="precio">84€</p>
+                <p>
+                    20 lecciones en videollamada<br>
+                    3 meses de acceso<br>
+                    Videos extra<br>
+                    Acceso al chat
+                </p>
+                <button>Comprar ahora</button>
+            </div>
+
+            <div class="card">
+                <h3>Profesional</h3>
+                <p class="precio">100€</p>
+                <p>
+                    25 lecciones en videollamada<br>
+                    Soporte directo<br>
+                    Videos extra<br>
+                    Acceso al chat
+                </p>
+                <button>Comprar ahora</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ---------------- FOOTER ---------------- -->
+    <footer>
+        <p>© 2025 AdrianCorp — Todos los derechos reservados</p>
+        <p>Síguenos en redes sociales</p>
+        <p>@AdrianCorpEdit</p>
+    </footer>
+
+    <!-- ----- AVISO DE COOKIES ----- -->
+    <div id="cookie-banner">
+        <span>
+            Usamos cookies para mejorar tu experiencia. Al continuar navegando aceptas su uso.
+        </span>
+
+        <button onclick="aceptarCookies()">
+            Aceptar
+        </button>
+    </div>
+
+    <script>
+        function aceptarCookies() {
+            document.cookie = "cookieAceptada=true; max-age=" + 60*60*24*30 + "; path=/";
+            document.getElementById("cookie-banner").style.display = "none";
+        }
+
+        window.onload = function() {
+            if (document.cookie.includes("cookieAceptada=true")) {
+                document.getElementById("cookie-banner").style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+</html>
